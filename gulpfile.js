@@ -17,6 +17,9 @@ const paths = {
 	html: './html/**/*.kit',
 	sass: './src/sass/**/*.scss',
 	js: './src/js/**/*.js',
+	jsMain:['./src/js/scrollSpy.js', './src/js/navbarToggler.js', './src/js/footerYear.js'],
+	jsOffers:['./src/js/footerYear.js'],
+	jsContact:['./src/js/contactFormValid.js','./src/js/footerYear.js'],
 	img: './src/img/*',
 	dist: './dist',
 	sassDest: './dist/css',
@@ -36,9 +39,35 @@ function sassCompiler(done) {
 	done()
 }
 
-function javaScript(done) {
-	src(paths.js)
+// Fixed errors - divided JavaScript into several files, but only one for single page
+
+function javaScriptMain(done) {
+	src(paths.jsMain)
 		.pipe(concat('main.js'))
+		.pipe(sourcemaps.init())
+		.pipe(babel({ presets: ['@babel/env'] }))
+		.pipe(uglify())
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(sourcemaps.write())
+		.pipe(dest(paths.jsDest))
+	done()
+}
+
+function javaScriptOffers(done) {
+	src(paths.jsOffers)
+		.pipe(concat('offers.js'))
+		.pipe(sourcemaps.init())
+		.pipe(babel({ presets: ['@babel/env'] }))
+		.pipe(uglify())
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(sourcemaps.write())
+		.pipe(dest(paths.jsDest))
+	done()
+}
+
+function javaScriptContact(done) {
+	src(paths.jsContact)
+		.pipe(concat('contact.js'))
 		.pipe(sourcemaps.init())
 		.pipe(babel({ presets: ['@babel/env'] }))
 		.pipe(uglify())
@@ -78,11 +107,11 @@ function startBrowserSync(done) {
 
 function watchForChanges(done) {
 	watch('./*.html').on('change', reload)
-	watch([paths.html, paths.sass, paths.js], parallel(handleKits, sassCompiler, javaScript)).on('change', reload)
+	watch([paths.html, paths.sass, paths.js], parallel(handleKits, sassCompiler, javaScriptMain, javaScriptOffers, javaScriptContact)).on('change', reload)
 	watch(paths.img, convertImages).on('change', reload)
 	done()
 }
 
-const mainFunctions = parallel(handleKits, sassCompiler, javaScript, convertImages)
+const mainFunctions = parallel(handleKits, sassCompiler, javaScriptMain, javaScriptOffers, javaScriptContact, convertImages)
 exports.cleanStuff = cleanStuff
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
