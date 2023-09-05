@@ -7,7 +7,8 @@ const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
 const imagemin = require('gulp-imagemin')
 const sourcemaps = require('gulp-sourcemaps')
-const kit = require('gulp-kit');
+const kit = require('gulp-kit')
+const concat = require('gulp-concat')
 const clean = require('gulp-clean')
 const browserSync = require('browser-sync').create()
 const reload = browserSync.reload
@@ -37,6 +38,7 @@ function sassCompiler(done) {
 
 function javaScript(done) {
 	src(paths.js)
+		.pipe(concat('main.js'))
 		.pipe(sourcemaps.init())
 		.pipe(babel({ presets: ['@babel/env'] }))
 		.pipe(uglify())
@@ -55,16 +57,13 @@ function convertImages(done) {
 }
 
 function handleKits(done) {
-	src(paths.html)
-		.pipe(kit())
-		.pipe(dest('./'))
+	src(paths.html).pipe(kit()).pipe(dest('./'))
 	done()
 }
 
 function cleanStuff(done) {
-	src(paths.dist, { read: false })
-	.pipe(clean())
-	// cleaning files - deletes dist folder 
+	src(paths.dist, { read: false }).pipe(clean())
+	// cleaning files - deletes dist folder
 	done()
 }
 
