@@ -1,0 +1,30 @@
+.bounce-top {
+	animation: bounce-top 2s infinite both;
+}
+
+ @keyframes bounce-top {
+    0% {
+      transform:translate(-50%, -12px);
+      animation-timing-function: ease-in;
+    }
+    40% {
+      transform:translate(-50%, -6px);
+      animation-timing-function: ease-in;
+    }
+    65% {
+      transform:translate(-50%, -3px);
+      animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      transform:translate(-50%, 0px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform:translate(-50%, -12px);
+      animation-timing-function: ease-out;
+    }
+  }
+  
