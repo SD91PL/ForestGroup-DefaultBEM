@@ -68,7 +68,7 @@ nav,
 		flex-wrap: wrap;
 		position: relative;
 		top: 0;
-		.navbar-brand {
+		.navbar__brand {
 			position: relative;
 			top: 0;
 			padding: 0 17px 0px 10px;
@@ -89,7 +89,7 @@ nav,
 				background-color: #222;
 				color: #eee;
 			}
-			.navbar-brand-icon {
+			.navbar__brand-icon {
 				margin-bottom: -2px;
 				margin-right: 6px;
 				margin-left: 6px;
@@ -97,7 +97,7 @@ nav,
 				width: 2.5rem;
 			}
 		}
-		.navbar-collapse {
+		.navbar__collapse {
 			display: block;
 			position: relative;
 			top: 0;
@@ -108,13 +108,13 @@ nav,
 			max-width: 1200px;
 			// transition: scale 0.33s; // because changed property "scale" to "transform:scale();"
 			transition: transform 0.33s;
-			.navbar-nav {
+			.navbar__nav {
 				display: flex;
 				flex-direction: column;
 				background-color: #fff;
 				// box-shadow: 0px 5px 5px #00000040;
 				height: 0; // No collision when navbar is hidden
-				.nav-link {
+				.navbar__nav-link {
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -148,8 +148,8 @@ nav,
 			// scale: 1 1; // Changed property "scale" to "transform:scale();" for older browsers
 			transform: scale(1, 1);
 		}
-		.navbar-toggler,
-		.navbar-back {
+		.navbar__toggler,
+		.navbar__back {
 			position: relative;
 			top: 0;
 			right: 0;
@@ -178,7 +178,7 @@ nav,
 	}
 }
 
-.nav-back-sticky {
+.nav__back--sticky {
 	position: sticky;
 }
 
@@ -186,20 +186,20 @@ nav,
 
 .header {
 	height: 100vh;
-	.hero-img {
+	.header__hero-img {
 		position: relative;
 		height: 100%;
 		background-image: url(../img/jungle-1807476_1280.jpg);
 		background-position: 50% 80%;
 		background-size: cover;
 		overflow: hidden;
-		.hero-shadow {
+		.header__hero-shadow {
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.5);
 			transition: background-color 0.33s;
 		}
-		.hero-text {
+		.header__hero-text {
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -211,11 +211,11 @@ nav,
 			color: #fff;
 			transform-origin: left;
 			transition: transform 0.33s;
-			.header-heading {
+			.header__heading {
 				margin: 0 0 5px;
 				font-size: 1.6rem;
 			}
-			.header-text {
+			.header__text {
 				margin: 0 0 10px;
 				font-size: 2.7rem;
 				font-weight: bold;
@@ -233,11 +233,11 @@ nav,
 			}
 		}
 	}
-	.hero-img:hover {
-		.hero-shadow {
+	.header__hero-img:hover {
+		.header__hero-shadow {
 			background-color: rgba(0, 0, 0, 0.55);
 		}
-		.hero-text {
+		.header__hero-text {
 			transform: translateY(-49%) translateX(-51%) scale(1.02);
 		}
 	}
@@ -294,19 +294,19 @@ nav,
 // BANNER
 .banner {
 	height: 300px;
-	.hero-img {
+	.banner__hero-img {
 		position: relative;
 		height: 100%;
 		background-image: url(../img/girl-5785590_1280.jpg);
 		background-position: center;
 		background-size: cover;
-		.hero-shadow {
+		.banner__hero-shadow {
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.1);
 			transition: background-color 0.33s;
 		}
-		.hero-text {
+		.banner__hero-text {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -322,26 +322,26 @@ nav,
 			background-color: rgba(0, 0, 0, 0.6);
 			border: #fff 1px solid;
 			transition: background-color 0.33s;
-			.banner-text {
+			.banner__text {
 				padding: 4px;
 				font-size: 3rem;
 				transition: scale 0.33s, text-shadow 0.33s;
 			}
 		}
 	}
-	.hero-img:hover {
-		.hero-shadow {
+	.banner__hero-img:hover {
+		.banner__hero-shadow {
 			background-color: rgba(0, 0, 0, 0.15);
 		}
-		.hero-text {
+		.banner__hero-text {
 			background-color: rgba(0, 0, 0, 0.68);
-			.banner-text {
+			.banner__text {
 				scale: 1.04;
 				text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
 			}
 		}
-		.hero-text:hover {
-			.banner-text {
+		.banner__hero-text:hover {
+			.banner__text {
 				scale: 1.06;
 			}
 		}
@@ -357,12 +357,12 @@ nav,
 	width: 100%;
 	.container {
 		width: 100%;
-		.offers-hint {
+		.offers__hint {
 			font-size: 1.6rem;
 			text-align: center;
 			margin-bottom: 2em;
 		}
-		.offers-wrap {
+		.offers__wrap {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -377,13 +377,13 @@ nav,
 			.premium {
 				order: 3;
 			}
-			.offer-card {
+			.offers__offer-card {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				min-width: 260px;
 				width: 100%;
-				.offer-box {
+				.offers__offer-box {
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
@@ -402,7 +402,7 @@ nav,
 						font-size: 2rem;
 						margin: 10px 0;
 					}
-					.price {
+					.offers__price {
 						font-size: 4rem;
 						margin-bottom: 1rem;
 					}
@@ -437,7 +437,7 @@ nav,
 						height: 47px;
 					}
 
-					.btn {
+					.offers__btn {
 						position: relative;
 						margin: 22px 10px 4px;
 						padding: 10px 20px;
@@ -450,16 +450,16 @@ nav,
 						overflow: hidden;
 					}
 
-					.btn-standard {
+					.offers__btn--standard {
 						background-color: #2ade72;
 						box-shadow: 0px 3px 8px rgba(29, 158, 81, 0.9);
 						border-color: transparent;
 					}
 
-					.btn-add {
+					.offers__btn--add {
 						transition: background-color 0.33s, color 0.33s;
 					}
-					.btn-add:hover {
+					.offers__btn--add:hover {
 						background-color: #000;
 						color: #fff;
 					}
@@ -488,24 +488,24 @@ nav,
 				}
 			}
 		}
-		.offers-info {
+		.offers__info {
 			font-size: 1.4rem;
 			text-align: center;
 			margin: 0 0 10px;
 
-			a,
-			a::after,
-			a::before {
+			.offers__link-anim,
+			.offers__link-anim::after,
+			.offers__link-anim::before {
 				transition: color 0.33s, height 0.33s;
 			}
-			a {
+			.offers__link-anim {
 				position: relative;
 				text-decoration: none;
 				font-weight: bold;
 				color: #000;
 				z-index: 0;
 			}
-			a::after {
+			.offers__link-anim::after {
 				content: '';
 				position: absolute;
 				bottom: -0.2rem;
@@ -529,18 +529,18 @@ nav,
 	background-color: #eee;
 	.wrapper {
 		padding: 5px 7.5px 7.5px;
-		.footer-box {
+		.footer__box {
 			display: flex;
 			margin: 0;
 			padding-top: 0.6rem;
 			padding-bottom: 0.6rem;
 			width: 100%;
-			.footer-logo {
+			.footer__logo {
 				display: none;
 				padding: 20px 20px 0;
 				width: 100%;
 
-				.footer-brand {
+				.footer__brand {
 					margin: 3rem;
 					img {
 						height: 4rem;
@@ -554,10 +554,10 @@ nav,
 					}
 				}
 			}
-			.footer-nav {
+			.footer__nav {
 				padding: 2rem 0;
 				width: 100%;
-				.footer-nav-card {
+				.footer__nav-card {
 					position: relative;
 					left: 33.3%;
 					margin: 3rem 0;
@@ -590,7 +590,7 @@ nav,
 			}
 		}
 	}
-	.footer-end {
+	.footer__end {
 		margin: 0 auto;
 		padding: 1.5em;
 		text-align: center;
@@ -610,7 +610,7 @@ nav,
 	}
 	.header {
 		height: 265px;
-		.hero-img {
+		.header__hero-img {
 			.chevron-down {
 				display: none;
 			}
@@ -653,14 +653,14 @@ nav,
 	}
 	.offers {
 		.container {
-			.offers-wrap {
+			.offers__wrap {
 				flex-direction: row;
 				flex-wrap: wrap;
-				.offer-card {
+				.offers__offer-card {
 					min-width: 240px;
 					max-width: 300px;
 					width: 100%;
-					.offer-box {
+					.offers__offer-box {
 						padding: 20px 10px;
 						min-width: 235px;
 						min-height: 381px;
@@ -691,7 +691,7 @@ nav,
 			.other {
 				justify-content: space-evenly;
 			}
-			.offers-info {
+			.offers__info {
 				a:hover {
 					color: #fff;
 				}
@@ -703,12 +703,12 @@ nav,
 	}
 	.footer {
 		.wrapper {
-			.footer-box {
-				.footer-logo {
+			.footer__box {
+				.footer__logo {
 					display: block;
 				}
-				.footer-nav {
-					.footer-nav-card {
+				.footer__nav {
+					.footer__nav-card {
 						left: 0;
 						width: 100%;
 					}
@@ -729,12 +729,12 @@ nav,
 	}
 	.offers {
 		.container {
-			.offers-wrap {
-				.offer-card {
+			.offers__wrap {
+				.offers__offer-card {
 					min-width: 300px;
 					margin: 0 1rem;
 					padding: 0 7.5px;
-					.offer-box {
+					.offers__offer-box {
 						padding: 30px;
 						min-width: 300px;
 						min-height: 400px;
@@ -753,28 +753,28 @@ nav,
 	.navbar {
 		.container {
 			position: static;
-			.navbar-brand {
+			.navbar__brand {
 				position: static;
 			}
-			.navbar-collapse {
+			.navbar__collapse {
 				display: block;
 				// scale: 1 1; // changed property scale to transform:scale(); for older browsers
 				transform: scale(1, 1); // don't touch it!
 				max-width: 80%; // space left for a few more links
-				.navbar-nav {
+				.navbar__nav {
 					flex-direction: row;
 					justify-content: flex-end;
 					height: 80px;
 					background-color: #fff;
 					// box-shadow: none;
-					.nav-link {
+					.navbar__nav-link {
 						min-width: 125px;
 						border-bottom: none;
 						box-shadow: none;
 					}
 				}
 			}
-			.navbar-toggler {
+			.navbar__toggler {
 				display: none;
 			}
 		}
@@ -782,13 +782,13 @@ nav,
 
 	.header {
 		height: 305px;
-		.hero-img {
+		.header__hero-img {
 			background-position: 50% 68%;
-			.hero-text {
-				.header-heading {
+			.header__hero-text {
+				.header__heading {
 					font-size: 1.8rem;
 				}
-				.header-text {
+				.header__text {
 					font-size: 2.9rem;
 				}
 			}
@@ -809,7 +809,7 @@ nav,
 
 	.offers {
 		.container {
-			.offers-wrap {
+			.offers__wrap {
 				flex-wrap: nowrap;
 				.demo {
 					order: 0;
@@ -823,10 +823,10 @@ nav,
 					order: 3;
 					margin: 0;
 				}
-				.offer-card {
+				.offers__offer-card {
 					padding: 0px;
 					margin: 0 7.5px;
-					.offer-box {
+					.offers__offer-box {
 						padding: 30px;
 						min-width: 270px;
 						max-width: 285px;
@@ -843,15 +843,15 @@ nav,
 
 	.footer {
 		.wrapper {
-			.footer-box {
+			.footer__box {
 				padding-top: 0.8rem;
 				padding-bottom: 0.8rem;
-				.footer-nav {
+				.footer__nav {
 					display: flex;
 					flex-direction: row;
 					justify-content: flex-start;
 					align-items: flex-start;
-					.footer-nav-card {
+					.footer__nav-card {
 						&--one {
 							flex-basis: 66%;
 						}
@@ -871,28 +871,29 @@ nav,
 @media (min-width: 1200px) {
 	.header {
 		height: 365px;
-		.hero-img {
+		.header__hero-img {
 			background-image: url(../img/jungle-1807476_1920.jpg);
-			.hero-text {
-				.header-heading {
+			.header__hero-text {
+				.header__heading {
 					font-size: 2rem;
 				}
-				.header-text {
+				.header__text {
 					font-size: 3.2rem;
 				}
 			}
 		}
 	}
+
 	.section-heading {
 		font-size: 3.2rem;
 	}
 
 	.banner {
-		.hero-img {
+		.banner__hero-img {
 			background-image: url(../img/girl-5785590_1920.jpg);
-			.hero-text {
+			.banner__hero-text {
 				max-width: 1050px;
-				.banner-text {
+				.banner__text {
 					padding: 5.5px;
 					font-size: 4rem;
 				}
@@ -902,19 +903,19 @@ nav,
 
 	.offers {
 		.container {
-			.offers-wrap {
+			.offers__wrap {
 				justify-content: space-around;
-				.offer-card {
+				.offers__offer-card {
 					max-width: 330px;
 					width: 100%;
-					.offer-box {
+					.offers__offer-box {
 						min-width: 330px;
 						max-width: 100%;
 					}
-					.offer-box:hover {
+					.offers__offer-box:hover {
 						scale: 1.02;
 					}
-					.offer-standard:hover {
+					.offers__offer-box--standard:hover {
 						scale: 1.08;
 					}
 				}
@@ -927,13 +928,13 @@ nav,
 	.offers {
 		.container {
 			max-width: 1080px;
-			.offers-wrap {
+			.offers__wrap {
 				justify-content: space-between;
-				.offer-card {
+				.offers__offer-card {
 					width: 325px;
 					max-width: 325px;
 					width: 100%;
-					.offer-box {
+					.offers__offer-box {
 						width: 325px;
 						min-width: 325px;
 						height: 420px;
@@ -946,7 +947,7 @@ nav,
 							}
 						}
 					}
-					.offer-standard:hover {
+					.offers__offer-box--standard:hover {
 						scale: 1.04;
 					}
 				}

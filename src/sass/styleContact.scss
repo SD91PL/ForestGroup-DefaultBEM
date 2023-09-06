@@ -14,10 +14,10 @@ a {
 	margin-bottom: 1.25rem;
 	align-content: center;
 	text-align: center;
-	&--number {
+	&__number {
 		line-height: 2;
 		font-size: 3rem;
-		img {
+		.phone__icon {
 			height: 2rem;
 			padding-right: 2rem;
 		}

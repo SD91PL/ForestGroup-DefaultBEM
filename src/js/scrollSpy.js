@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const section = document.querySelectorAll('.spied-scroll')
-	const navLinks = document.querySelectorAll('.nav-link')
+	const navLinks = document.querySelectorAll('.navbar__nav-link')
 
 	window.onscroll = () => {
 		section.forEach(sec => {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (top >= offset && top < offset + height) {
 				navLinks.forEach(links => {
 					links.classList.remove('active')
-					document.querySelector('.nav-link[href*=' + id + ']').classList.add('active')
+					document.querySelector('.navbar__nav-link[href*=' + id + ']').classList.add('active')
 				})
 			}
 		})

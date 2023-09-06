@@ -12,32 +12,32 @@
 	<body>
 		<nav id="navbar" class="navbar">
 	<div class="container wrapper">
-		<a class="navbar-brand" href="#home">
+		<a class="navbar__brand" href="#home">
 			<img
-				class="navbar-brand-icon"
+				class="navbar__brand-icon"
 				src="./dist/img/tree-fill.svg"
 				alt="Logotyp firmy Forest Group - ciemnoszara grafika drzewa iglastego" />Forest
 		</a>
-		<button class="navbar-toggler">
+		<button class="navbar__toggler">
 			<img src="./dist/img/list.svg" alt="Przycisk do rozwijania nawigacji" />
 		</button>
-		<div class="navbar-collapse">
-			<div class="navbar-nav">
-				<a class="nav-link active" href="#home">Home</a>
-				<a class="nav-link" href="#aboutus">O nas</a>
-				<a class="nav-link" href="#offers">Oferta</a>
-				<a class="nav-link" href="./contact.html">Kontakt</a>
+		<div class="navbar__collapse">
+			<div class="navbar__nav">
+				<a class="navbar__nav-link active" href="#home">Home</a>
+				<a class="navbar__nav-link" href="#aboutus">O nas</a>
+				<a class="navbar__nav-link" href="#offers">Oferta</a>
+				<a class="navbar__nav-link" href="./contact.html">Kontakt</a>
 			</div>
 		</div>
 	</div>
 </nav>
 
 		<header id="home" class="header spied-scroll">
-    <div class="hero-img">
-        <div class="hero-shadow"></div>
-        <div class="hero-text wrapper">
-            <h1 class="header-heading">Forest Group</h1>
-            <p class="header-text">Najpiękniejszy park w&nbsp;Twojej okolicy!</p>
+    <div class="header__hero-img">
+        <div class="header__hero-shadow"></div>
+        <div class="header__hero-text wrapper">
+            <h1 class="header__heading">Forest Group</h1>
+            <p class="header__text">Najpiękniejszy park w&nbsp;Twojej okolicy!</p>
         </div>
         <a href="#aboutus" class="chevron-down bounce-top"><img src="./dist/img/chevron-down.svg" alt=""></a>
     </div>
@@ -66,22 +66,22 @@
 </section>
 
 			<section class="banner">
-    <div class="hero-img">
-        <div class="hero-shadow"></div>
-        <div class="hero-text wrapper">
-            <p class="banner-text">Przygoda dla&nbsp;całej&nbsp;rodziny</p>
+    <div class="banner__hero-img">
+        <div class="banner__hero-shadow"></div>
+        <div class="banner__hero-text wrapper">
+            <p class="banner__text">Przygoda dla&nbsp;całej&nbsp;rodziny</p>
         </div>
     </div>
 </section>
 			<section id="offers" class="offers section wrapper spied-scroll">
 	<h2 class="section-heading">Oferta</h2>
 	<div class="container">
-		<p class="offers-hint">Wybierz jedną ze wspaniałych ofert!</p>
-		<div class="offers-wrap">
-			<div class="offer-card demo">
-				<div class="offer-box">
+		<p class="offers__hint">Wybierz jedną ze wspaniałych ofert!</p>
+		<div class="offers__wrap">
+			<div class="offers__offer-card demo">
+				<div class="offers__offer-box">
 					<h3>Demo</h3>
-					<p class="price">$0</p>
+					<p class="offers__price">$0</p>
 					<ul>
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
@@ -95,13 +95,13 @@
 							<img src="./dist/img/minus.svg" alt="poza pakietem" class="minus-icon" />opcja poza pakietem
 						</li>
 					</ul>
-					<button type="button" class="btn">Wybierz</button>
+					<button type="button" class="offers__btn">Wybierz</button>
 				</div>
 			</div>
-			<div class="offer-card standard">
-				<div class="offer-box offer-standard">
+			<div class="offers__offer-card standard">
+				<div class="offers__offer-box offers__offer-box--standard">
 					<h3>Standard</h3>
-					<p class="price">$99</p>
+					<p class="offers__price">$99</p>
 					<ul>
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
@@ -113,13 +113,13 @@
 							<img src="./dist/img/minus.svg" alt="poza pakietem" class="minus-icon" />opcja poza pakietem
 						</li>
 					</ul>
-					<button type="button" class="btn btn-standard glass">Wybierz</button>
+					<button type="button" class="offers__btn offers__btn--standard glass">Wybierz</button>
 				</div>
 			</div>
-			<div class="offer-card premium">
-				<div class="offer-box">
+			<div class="offers__offer-card premium">
+				<div class="offers__offer-box">
 					<h3>Premium</h3>
-					<p class="price">$299</p>
+					<p class="offers__price">$299</p>
 					<ul>
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
@@ -127,27 +127,27 @@
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
 						<li><img src="./dist/img/check.svg" alt="w pakiecie" class="check-icon" />opcja w pakiecie</li>
 					</ul>
-					<button type="button" class="btn">Wybierz</button>
+					<button type="button" class="offers__btn">Wybierz</button>
 				</div>
 			</div>
 		</div>
-		<p class="offers-info">
+		<p class="offers__info">
 			Skorzystaj z jednego z trzech głównych pakietów lub
-			<a href="./contact.html" class="link-anim">skontaktuj&nbsp;się</a> z nami i ustal warunki indywidualnie!
+			<a href="./contact.html" class="offers__link-anim">skontaktuj&nbsp;się</a> z nami i ustal warunki indywidualnie!
 		</p>
-		<p class="offers-info offers-info-premium">
+		<p class="offers__info offers__info-premium">
 			Pakiet <strong>Premium</strong> zawiera dożywotni voucher imienny -15% na kolejne rezerwacje.
 		</p>
-		<p class="offers-info">Sprawdź, co mamy jeszcze <a href="./offers.html" class="link-anim">do&nbsp;zaoferowania</a> i daj&nbsp;się&nbsp;ponieść&nbsp;przygodzie!</p>
+		<p class="offers__info">Sprawdź, co mamy jeszcze <a href="./offers.html" class="offers__link-anim">do&nbsp;zaoferowania</a> i daj&nbsp;się&nbsp;ponieść&nbsp;przygodzie!</p>
 	</div>
 </section>
 
 		</main>
 		<footer class="footer">
 	<div class="container wrapper">
-		<div class="footer-box">
-			<div class="footer-logo">
-				<div class="footer-brand">
+		<div class="footer__box">
+			<div class="footer__logo">
+				<div class="footer__brand">
 					<img
 						class="navbar-brand-icon"
 						src="./dist/img/tree-fill.svg"
@@ -155,8 +155,8 @@
 					<p>Forest</p>
 				</div>
 			</div>
-			<div class="footer-nav">
-				<div class="footer-nav-card footer-nav-card--one">
+			<div class="footer__nav">
+				<div class="footer__nav-card footer__nav-card--one">
 					<h3>O nas</h3>
 					<ul>
 						<li><a href="#">Historia</a></li>
@@ -164,7 +164,7 @@
 						<li><a href="#">Opinie</a></li>
 					</ul>
 				</div>
-				<div class="footer-nav-card footer-nav-card--two">
+				<div class="footer__nav-card footer__nav-card--two">
 					<h3>Nasza Firma</h3>
 					<ul>
 						<li><a href="#">Praca</a></li>
@@ -172,7 +172,7 @@
 						<li><a href="#">Zarząd</a></li>
 					</ul>
 				</div>
-				<div class="footer-nav-card footer-nav-card--three">
+				<div class="footer__nav-card footer__nav-card--three">
 					<h3>Dokumenty</h3>
 					<ul>
 						<li><a href="#">Wnioski</a></li>
@@ -182,7 +182,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer-end">
+	<div class="footer__end">
 		<p>&copy; <span class="footer__year"></span> Forest Group Company Ltd.</p>
 	</div>
 </footer>

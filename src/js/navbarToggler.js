@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const burgerBtn = document.querySelector('.navbar-toggler')
-	const burgerMenu = document.querySelector('.navbar-collapse')
+	const burgerBtn = document.querySelector('.navbar__toggler')
+	const burgerMenu = document.querySelector('.navbar__collapse')
 
 	const toggleMenu = () => {
 		burgerMenu.classList.toggle('menu-appear')
