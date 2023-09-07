@@ -47,7 +47,6 @@ button {
 
 //  NAV
 
-nav,
 .navbar {
 	padding: 0;
 	font-size: 1.6rem;
@@ -274,7 +273,8 @@ nav,
 		order: 2;
 		margin: 1.2rem auto;
 		min-width: 50%;
-		max-width: 100%;
+		width: 100%;
+		max-width: 527px;
 	}
 
 	&__title {
@@ -517,7 +517,7 @@ nav,
 			}
 
 			&-premium {
-				color: #888;
+				color: #555;
 			}
 		}
 	}
@@ -620,20 +620,6 @@ nav,
 
 @media (min-width: 576px) {
 	.about-us {
-		&__box {
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-			align-content: space-evenly;
-			padding: 0.2em;
-		}
-
-		&__img {
-			margin: 0.2em;
-			padding-left: 0.1em;
-			padding-right: 1em;
-			order: 1;
-		}
 
 		&__box-text {
 			align-self: flex-start;
@@ -722,11 +708,25 @@ nav,
 	.header {
 		height: 300px;
 	}
+
 	.about-us {
+		&__box {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			align-content: space-evenly;
+			padding: 0.2em;
+		}
+
 		&__img {
+			margin: 0.2em;
+			padding-left: 0.1em;
 			padding-right: 1.2em;
+			max-width: 100%;
+			order: 1;
 		}
 	}
+
 	.offers {
 		.container {
 			.offers__wrap {
