@@ -111,7 +111,6 @@ button {
 				display: flex;
 				flex-direction: column;
 				background-color: #fff;
-				// box-shadow: 0px 5px 5px #00000040;
 				height: 0; // No collision when navbar is hidden
 				.navbar__nav-link {
 					display: flex;
@@ -453,7 +452,6 @@ button {
 					.offers__btn--standard {
 						background-color: #2ade72;
 						box-shadow: 0px 3px 8px rgba(29, 158, 81, 0.9);
-						border-color: transparent;
 					}
 
 					.offers__btn--add {
@@ -768,7 +766,6 @@ button {
 					justify-content: flex-end;
 					height: 80px;
 					background-color: #fff;
-					// box-shadow: none;
 					.navbar__nav-link {
 						min-width: 125px;
 						border-bottom: none;
