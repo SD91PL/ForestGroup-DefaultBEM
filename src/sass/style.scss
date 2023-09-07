@@ -574,7 +574,9 @@ button {
 							font-size: 1.4rem;
 							padding: 0.5rem 0;
 							a {
-								padding: 1rem 0;
+								position: relative;
+								left: -.5rem;
+								padding: 1rem .5rem;
 								line-height: 2.6rem;
 								text-decoration: none;
 								color: #000;
