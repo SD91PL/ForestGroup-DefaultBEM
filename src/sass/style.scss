@@ -328,6 +328,10 @@ button {
 			}
 		}
 	}
+	.banner__hero-img--offers {
+		// background-attachment: fixed;
+		background-image: url(../img/dad-2618982_1280.jpg);
+	}
 	.banner__hero-img:hover {
 		.banner__hero-shadow {
 			background-color: rgba(0, 0, 0, 0.15);
@@ -573,8 +577,8 @@ button {
 							padding: 0.5rem 0;
 							a {
 								position: relative;
-								left: -.5rem;
-								padding: 1rem .5rem;
+								left: -0.5rem;
+								padding: 1rem 0.5rem;
 								line-height: 2.6rem;
 								text-decoration: none;
 								color: #000;
@@ -620,7 +624,6 @@ button {
 
 @media (min-width: 576px) {
 	.about-us {
-
 		&__box-text {
 			align-self: flex-start;
 			margin: 0.2em;
@@ -897,6 +900,9 @@ button {
 					font-size: 4rem;
 				}
 			}
+		}
+		.banner__hero-img--offers {
+			background-image: url(../img/dad-2618982_1920.jpg);
 		}
 	}
 
