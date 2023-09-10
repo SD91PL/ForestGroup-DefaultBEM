@@ -19,14 +19,19 @@
 				src="./dist/img/tree-fill.svg"
 				alt="Logotyp firmy Forest Group - ciemnoszara grafika drzewa iglastego" />Forest
 		</a>
-		<a href="./index.html">
-			<button class="navbar__back">
-				<img src="./dist/img/arrow-left.svg" alt="Przycisk powrotu na stronę główną" />
-			</button>
-		</a>
+		<button class="navbar__toggler">
+			<img src="./dist/img/list.svg" alt="Przycisk do rozwijania nawigacji" />
+		</button>
+		<div class="navbar__collapse">
+			<div class="navbar__nav">
+				<a class="navbar__nav-link" href="./index.html#home">Home</a>
+				<a class="navbar__nav-link" href="./index.html#aboutus">O nas</a>
+				<a class="navbar__nav-link" href="./index.html#offers">Oferta</a>
+				<a class="navbar__nav-link active" href="./contact.html">Kontakt</a>
+			</div>
+		</div>
 	</div>
 </nav>
-
 		<main class="center contact-flex">
 			<div class="center">
     <form class="contact-form contact-wrapper">
