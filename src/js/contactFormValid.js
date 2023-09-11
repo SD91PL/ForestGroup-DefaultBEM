@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	const checkLength = (input, min) => {
-		if (input.value.length < min) {
+		if (input.value.trim().length < min) {
 			showError(input, `${input.previousElementSibling.innerText.slice(0, -1)} składa się z min. ${min} znaków`)
 		}
 	}
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const checkMail = email => {
 		const re = /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/i
 
-		if (re.test(email.value)) {
+		if (re.test(email.value.trim())) {
 			clearError(email)
 		} else {
 			showError(email, 'E-mail jest niepoprawny')
