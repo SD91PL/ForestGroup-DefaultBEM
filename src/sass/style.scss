@@ -199,7 +199,7 @@ button {
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.5);
-			transition: background-color 0.33s;
+			transition: background-color 0.66s;
 		}
 		.header__hero-text {
 			position: absolute;
@@ -237,11 +237,11 @@ button {
 	}
 	.header__hero-img:hover {
 		.header__hero-shadow {
-			background-color: rgba(0, 0, 0, 0.55);
+			background-color: rgba(3, 16, 7, 0.55);
 		}
-		.header__hero-text {
-			transform: translateY(-49%) translateX(-51%) scale(1.02);
-		}
+		// .header__hero-text {
+		// 	transform: translateY(-49%) translateX(-51%) scale(1.02);
+		// }
 	}
 }
 
@@ -291,7 +291,8 @@ button {
 		margin: 0.5em;
 		padding: 0.2em;
 		font-size: 1.4rem;
-		text-align: justify;
+		line-height: 2.8rem;
+		// text-align: justify;
 	}
 }
 
@@ -304,10 +305,11 @@ button {
 		background-image: url(../img/girl-5785590_1280.jpg);
 		background-position: center;
 		background-size: cover;
+		// background-attachment: fixed;
 		.banner__hero-shadow {
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: rgba(27, 145, 74, 0.1);
 			transition: background-color 0.33s;
 		}
 		.banner__hero-text {
@@ -329,6 +331,7 @@ button {
 			.banner__text {
 				padding: 4px;
 				font-size: 3rem;
+				font-weight: 600;
 				transition: scale 0.33s, text-shadow 0.33s;
 			}
 		}
@@ -336,10 +339,14 @@ button {
 	.banner__hero-img--offers {
 		// background-attachment: fixed;
 		background-image: url(../img/dad-2618982_1280.jpg);
+
+		.banner__hero-shadow {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
 	}
 	.banner__hero-img:hover {
 		.banner__hero-shadow {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: rgba(27, 145, 74, 0.15);
 		}
 		.banner__hero-text {
 			background-color: rgba(0, 0, 0, 0.68);
@@ -352,6 +359,11 @@ button {
 			.banner__text {
 				scale: 1.06;
 			}
+		}
+	}
+	.banner__hero-img--offers:hover {
+		.banner__hero-shadow {
+			background-color: rgba(0, 0, 0, 0.15);
 		}
 	}
 }
@@ -411,8 +423,9 @@ button {
 						margin: 10px 0;
 					}
 					.offers__price {
-						font-size: 4rem;
 						margin-bottom: 1rem;
+						font-size: 4rem;
+						font-weight: 600;
 					}
 					ul {
 						display: flex;
@@ -811,6 +824,7 @@ button {
 		}
 		&__text {
 			font-size: 1.6rem;
+			line-height: 3.2rem;
 		}
 	}
 
