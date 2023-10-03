@@ -106,7 +106,8 @@ button {
 			width: 100%;
 			max-width: 1200px;
 			// transition: scale 0.33s; // because changed property "scale" to "transform:scale();"
-			transition: transform 0.33s;
+			opacity: 0;
+			transition: transform 0.33s, opacity .16s;
 			.navbar__nav {
 				display: flex;
 				flex-direction: column;
@@ -148,6 +149,7 @@ button {
 		}
 		.menu-appear {
 			// scale: 1 1; // Changed property "scale" to "transform:scale();" for older browsers
+			opacity: 1;
 			transform: scale(1, 1);
 		}
 		.navbar__toggler,
@@ -784,6 +786,7 @@ button {
 			}
 			.navbar__collapse {
 				display: block;
+				opacity: 1;
 				// scale: 1 1; // changed property scale to transform:scale(); for older browsers
 				transform: scale(1, 1); // don't touch it!
 				max-width: 80%; // space left for a few more links
