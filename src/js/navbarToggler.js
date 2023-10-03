@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const burgerBtn = document.querySelector('.navbar__toggler')
 	const burgerMenu = document.querySelector('.navbar__collapse')
+	const navLinks = document.querySelectorAll('.navbar__nav-link')
 
 	const toggleMenu = () => {
 		burgerMenu.classList.toggle('menu-appear')
@@ -13,4 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	burgerBtn.addEventListener('click', toggleMenu)
+
+	navLinks.forEach(link => {
+		link.addEventListener('click', toggleMenu)
+	})
 })
