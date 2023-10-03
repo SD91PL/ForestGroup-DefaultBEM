@@ -595,16 +595,20 @@ button {
 							padding: 0.5rem 0;
 							a {
 								position: relative;
-								left: -0.5rem;
-								padding: 1rem 0.5rem;
+								left: calc(-1.2rem - 3px);
+								padding: 0.6rem 1.2rem;
 								line-height: 2.6rem;
 								text-decoration: none;
 								color: #000;
-								transition: color 0.33s, background-color 0.33s;
+								border-left: 3px solid #00000000;
+								// transition: color 0.33s, background-color 0.33s;
+								transition: border .17s;
 							}
-							a:hover {
-								color: #fff;
-								background-color: #000;
+							a:hover, a:focus {
+								// color: #fff;
+								// background-color: #000;
+								border-left: 3px solid #212529;
+								outline: none;
 							}
 						}
 					}
