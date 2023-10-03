@@ -703,10 +703,11 @@ button {
 				justify-content: space-evenly;
 			}
 			.offers__info {
-				a:hover {
+				a:hover, a:focus {
 					color: #fff;
+					outline: none;
 				}
-				a:hover::after {
+				a:hover::after, a:focus::after {
 					height: 115%;
 				}
 			}
