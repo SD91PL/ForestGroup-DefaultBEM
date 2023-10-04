@@ -477,6 +477,7 @@ button {
 					.offers__btn:hover, .offers__btn:focus {
 						background-color: #f8f9fa;
 						outline: none;
+						transform: scale(1.04);
 					}
 
 					.offers__btn--standard {
@@ -486,13 +487,9 @@ button {
 					.offers__btn--standard:hover, .offers__btn--standard:focus {
 						background-color: #2ade72;
 					}
-					.offers__btn--standard:focus {
-						transform: scale(1.04);
-					}
-
 
 					.offers__btn--add {
-						transition: background-color 0.33s, color 0.33s;
+						transition: background-color 0.33s, color 0.33s, transform .33s;
 					}
 					.offers__btn--add:hover {
 						background-color: #000;
