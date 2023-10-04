@@ -5,23 +5,29 @@
 }
 
 // Phone-number
-a {
-	text-decoration: none;
-	color: inherit;
-}
 .phone {
 	padding: 1.5rem;
 	margin-bottom: 1.25rem;
 	align-content: center;
 	text-align: center;
 	&__number {
+		display: block;
+		text-decoration: none;
+		color: inherit;
 		line-height: 2;
 		font-size: 3rem;
+		transition: transform 0.33s;
 		.phone__icon {
 			height: 2rem;
 			padding-right: 2rem;
 		}
 	}
+}
+
+.phone__number:hover,
+.phone__number:focus {
+	transform: scale(1.05);
+	outline: none;
 }
 
 // Map
@@ -97,6 +103,11 @@ h1 {
 		font-size: 1.2rem;
 		border: 1px solid rgb(197, 197, 197);
 	}
+	input:focus,
+	textarea:focus {
+		outline: none;
+		background-color: #f8f9fa;
+	}
 	.error-text {
 		margin: 4px 0 0 8px;
 		font-size: 1.1rem;
@@ -138,12 +149,16 @@ h1 {
 }
 
 .send:hover,
+.send:focus,
 .clear:hover,
-.close:hover {
+.clear:focus,
+.close:hover,
+.close:focus {
 	background-color: #20ab57;
 	box-shadow: 0px 1px 4px #20ab57;
 	color: #fff;
 	scale: 1.1;
+	outline: none;
 }
 
 .popup {
