@@ -469,14 +469,27 @@ button {
 						background-color: #fff;
 						border-radius: 5px;
 						border-color: transparent;
+						transition: background-color .33s, transform .33s;
 						cursor: pointer;
 						overflow: hidden;
+						
+					}
+					.offers__btn:hover, .offers__btn:focus {
+						background-color: #f8f9fa;
+						outline: none;
 					}
 
 					.offers__btn--standard {
 						background-color: #2ade72;
 						box-shadow: 0px 3px 8px rgba(29, 158, 81, 0.9);
 					}
+					.offers__btn--standard:hover, .offers__btn--standard:focus {
+						background-color: #2ade72;
+					}
+					.offers__btn--standard:focus {
+						transform: scale(1.04);
+					}
+
 
 					.offers__btn--add {
 						transition: background-color 0.33s, color 0.33s;
