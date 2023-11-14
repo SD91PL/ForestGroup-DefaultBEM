@@ -233,7 +233,6 @@ button {
 			position: absolute;
 			left: 50%;
 			bottom: 12vh;
-			// padding: 10px; // it makes bugs with centering // just in case it have to be in img tag
 			transform: translate(-50%, -12px);
 			img {
 				height: 50px;
@@ -244,9 +243,6 @@ button {
 		.header__hero-shadow {
 			background-color: rgba(3, 16, 7, 0.55);
 		}
-		// .header__hero-text {
-		// 	transform: translateY(-49%) translateX(-51%) scale(1.02);
-		// }
 	}
 }
 
@@ -297,7 +293,6 @@ button {
 		padding: 0.2em;
 		font-size: 1.4rem;
 		line-height: 2.8rem;
-		// text-align: justify;
 	}
 }
 
@@ -342,9 +337,7 @@ button {
 		}
 	}
 	.banner__hero-img--offers {
-		// background-attachment: fixed;
 		background-image: url(../img/dad-2618982_1280.jpg);
-
 		.banner__hero-shadow {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
@@ -360,11 +353,6 @@ button {
 				text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
 			}
 		}
-		// .banner__hero-text:hover {
-		// 	.banner__text {
-		// 		scale: 1.06;
-		// 	}
-		// }
 	}
 	.banner__hero-img--offers:hover {
 		.banner__hero-shadow {
