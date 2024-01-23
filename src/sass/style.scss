@@ -521,7 +521,7 @@ button {
 			}
 		}
 		.offers__info {
-			font-size: 1.4rem;
+			font-size: 1.8rem;
 			text-align: center;
 			margin: 0 0 10px;
 
@@ -547,9 +547,9 @@ button {
 				background-color: #000;
 				z-index: -1;
 			}
-
-			&-premium {
-				color: #555;
+			&--offer {
+				margin-top: 2rem;
+				// font-size: 2rem;
 			}
 		}
 	}
@@ -613,13 +613,10 @@ button {
 								text-decoration: none;
 								color: #000;
 								border-left: 3px solid #00000000;
-								// transition: color 0.33s, background-color 0.33s;
 								transition: border 0.17s;
 							}
 							a:hover,
 							a:focus {
-								// color: #fff;
-								// background-color: #000;
 								border-left: 3px solid #212529;
 								outline: none;
 							}
