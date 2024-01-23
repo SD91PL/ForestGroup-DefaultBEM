@@ -78,15 +78,15 @@ button {
 			line-height: 80px;
 			transition: background-color 0.33s, color 0.33s;
 			&:hover {
-				background-color: #111;
-				color: #eee;
+				background-color: #eee;
+				color: #111;
 				cursor: pointer;
 			}
 			&:focus {
 				outline: none;
 				box-shadow: none;
-				background-color: #222;
-				color: #eee;
+				background-color: #eee;
+				color: #111;
 			}
 			.navbar__brand-icon {
 				margin-bottom: -2px;
@@ -107,7 +107,7 @@ button {
 			max-width: 1200px;
 			// transition: scale 0.33s; // because changed property "scale" to "transform:scale();"
 			opacity: 0;
-			transition: transform 0.33s, opacity .16s;
+			transition: transform 0.33s, opacity 0.16s;
 			.navbar__nav {
 				display: flex;
 				flex-direction: column;
@@ -126,20 +126,28 @@ button {
 					box-shadow: 0px 5px 5px #00000040;
 					transition: background-color 0.33s, color 0.33s;
 					&:hover {
-						background-color: #444;
-						color: #eee;
+						background-color: #eee;
+						color: #111;
 						cursor: pointer;
 					}
 					&:focus {
 						outline: none;
 						box-shadow: none;
-						background-color: #333;
-						color: #eee;
+						background-color: #eee;
+						color: #111;
 					}
 				}
 				.active {
 					background-color: #000;
 					color: #eee;
+					&:hover {
+						background-color: #000;
+						color: #eee;
+					}
+					&:focus {
+						background-color: #000;
+						color: #eee;
+					}
 				}
 
 				.active:hover {
@@ -460,12 +468,12 @@ button {
 						background-color: #fff;
 						border-radius: 5px;
 						border-color: transparent;
-						transition: background-color .33s, transform .33s;
+						transition: background-color 0.33s, transform 0.33s;
 						cursor: pointer;
 						overflow: hidden;
-						
 					}
-					.offers__btn:hover, .offers__btn:focus {
+					.offers__btn:hover,
+					.offers__btn:focus {
 						background-color: #f8f9fa;
 						outline: none;
 						transform: scale(1.04);
@@ -475,12 +483,13 @@ button {
 						background-color: #2ade72;
 						box-shadow: 0px 3px 8px rgba(29, 158, 81, 0.9);
 					}
-					.offers__btn--standard:hover, .offers__btn--standard:focus {
+					.offers__btn--standard:hover,
+					.offers__btn--standard:focus {
 						background-color: #2ade72;
 					}
 
 					.offers__btn--add {
-						transition: background-color 0.33s, color 0.33s, transform .33s;
+						transition: background-color 0.33s, color 0.33s, transform 0.33s;
 					}
 					.offers__btn--add:hover {
 						background-color: #000;
@@ -605,9 +614,10 @@ button {
 								color: #000;
 								border-left: 3px solid #00000000;
 								// transition: color 0.33s, background-color 0.33s;
-								transition: border .17s;
+								transition: border 0.17s;
 							}
-							a:hover, a:focus {
+							a:hover,
+							a:focus {
 								// color: #fff;
 								// background-color: #000;
 								border-left: 3px solid #212529;
@@ -706,11 +716,13 @@ button {
 				justify-content: space-evenly;
 			}
 			.offers__info {
-				a:hover, a:focus {
+				a:hover,
+				a:focus {
 					color: #fff;
 					outline: none;
 				}
-				a:hover::after, a:focus::after {
+				a:hover::after,
+				a:focus::after {
 					height: 115%;
 				}
 			}
