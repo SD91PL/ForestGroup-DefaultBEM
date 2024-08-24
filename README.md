@@ -1,5 +1,6 @@
 # ForestGroupBEM
-Improved ForestGroup-Default Project after CodeReview
+Improved ForestGroup-Default Project after received CodeReview.
+- The naming of css classes was changed in a way that follows the BEM methodology.
 
 
 Live: https://sd91pl.github.io/ForestGroup-DefaultBEM/
